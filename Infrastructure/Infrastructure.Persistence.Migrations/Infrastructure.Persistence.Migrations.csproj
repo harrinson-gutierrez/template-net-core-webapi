@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="EmbeddedResources\202004231147_InsertsInitialsUsersRoles.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\202004231147_InsertsInitialsUsersRoles.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator" Version="3.2.15" />
+    <PackageReference Include="FluentMigrator.Abstractions" Version="3.2.15" />
+    <PackageReference Include="FluentMigrator.Runner" Version="3.2.15" />
+    <PackageReference Include="FluentMigrator.Runner.Postgres" Version="3.2.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>

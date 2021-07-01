@@ -1,0 +1,45 @@
+
+--configurar aws
+aws configure
+
+--crear el template
+aws ses create-template --cli-input-json file://RecoveryPassword-es.json
+aws ses create-template --cli-input-json file://RecoveryPassword-en.json
+
+aws ses create-template --cli-input-json file://RecoveryPasswordConfirm-es.json
+aws ses create-template --cli-input-json file://RecoveryPasswordConfirm-en.json
+
+aws ses create-template --cli-input-json file://ConfirmAccount-en.json
+aws ses create-template --cli-input-json file://ConfirmAccount-es.json
+
+--eliminar template
+aws ses delete-template --template ADA-RecoveryPassword-Es
+aws ses delete-template --template ADA-RecoveryPassword-En
+
+--eliminar template
+aws ses delete-template --template ADA-RecoveryPasswordConfirm-Es
+aws ses delete-template --template ADA-RecoveryPasswordConfirm-En
+
+--eliminar template
+aws ses delete-template --template ADA-ConfirmAccount-En
+aws ses delete-template --template ADA-ConfirmAccount-Es
+
+--confirmAccount
+
+aws ses create-template --cli-input-json file://ConfirmAccount.json
+aws ses delete-template --template ADA-ConfirmAccount
+
+
+--RecoveryPassword
+
+aws ses create-template --cli-input-json file://RecoveryPassword.json
+aws ses delete-template --template ADA-RecoveryPassword
+
+--RecoveryPasswordConfirm
+
+aws ses create-template --cli-input-json file://RecoveryPasswordConfirm.json
+aws ses delete-template --template ADA-RecoveryPasswordConfirm
+
+--SentTestToUsers
+aws ses create-template --cli-input-json fileb://SentTestUsers.json
+aws ses delete-template --template ADA-SentTest

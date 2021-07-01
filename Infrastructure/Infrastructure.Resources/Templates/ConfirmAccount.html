@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900&display=swap" rel="stylesheet">
+    <style rel="stylesheet" type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 100% !important;
+        }
+
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header {
+            border-bottom: 5px solid rgba(146, 39, 143, 1);
+            background-color: #1a202e;
+            padding: 13px 15px;
+            box-sizing: content-box;
+        }
+
+        .logo {
+            width: 200px;
+            margin-left: 10px;
+        }
+
+        .content {
+            height: 397px;
+            border: 2px dashed #ddd;
+            margin: 20px auto !important;
+            width: 95% !important;
+        }
+
+        .content-desc-course-mobile {
+            display: none;
+        }
+
+        .content-desc-course {
+            vertical-align: baseline;
+        }
+
+        .desc-course {
+            width: 90%;
+        }
+
+        .img-course {
+            width: 360px;
+        }
+
+        .welcome-msg-content {
+            padding: 10px;
+        }
+
+        .hola span {
+            color: #4483c3;
+            text-decoration: underline;
+        }
+
+        .desc-course-name {
+            font-size: 15px;
+            width: 60%;
+            margin: 20px auto 0px;
+            text-align: center;
+        }
+
+        .link_action {
+            background: rgba(146, 39, 143, 1);
+            color: #fff !important;
+            display: block;
+            border-radius: 22px;
+            padding: 17px;
+            text-align: center;
+            text-decoration: none;
+            margin: 25px auto !important;
+            width: 35%;
+        }
+
+        .desc-course-mobile,
+        .desc-course,
+        .course-title {
+            color: #153643;
+            font-style: italic;
+            margin: 9px 0px;
+        }
+
+        .curso {
+            margin: 0;
+        }
+
+        .title {
+            color: #333333;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 500;
+            vertical-align: baseline;
+            font-size: 30px;
+            line-height: 28.8px;
+        }
+
+        .subtitle {
+            color: #333333;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 500;
+            vertical-align: baseline;
+            font-size: 21px;
+            line-height: 28.8px;
+        }
+
+        .details {
+            border-top: 1px #ddd solid;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .content-img-course img {
+                width: 420px !important;
+            }
+
+            .curso strong {
+                font-size: 24px !important;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .content-msg {
+                vertical-align: baseline !important;
+            }
+
+            .content-img-course {
+                vertical-align: baseline !important;
+                padding-top: 20px !important;
+            }
+
+                .content-img-course img {
+                    width: 250px !important;
+                }
+
+            .content-desc-course {
+                vertical-align: inherit !important;
+            }
+        }
+
+        @media only screen and (max-width: 479px) {
+            .desc-course-name {
+                width: auto;
+            }
+
+            .content-desc-course-mobile {
+                display: block !important;
+                margin-top: 50px !important;
+                text-align: center !important;
+            }
+
+            .content-img-course img {
+                width: 100% !important;
+            }
+
+            .title .bienvenido {
+                font-size: 40px !important;
+            }
+
+            .title .hola {
+                margin: 0 !important;
+                margin-top: 10px !important;
+            }
+        }
+
+        @media only screen and (max-width: 319px) {
+            .title .bienvenido {
+                text-align: center !important;
+                font-size: 60px !important;
+            }
+
+            .welcome-msg-content {
+                padding-top: 170px !important;
+            }
+        }
+    </style>
+</head>
+
+<body yahoo bgcolor="#FFF">
+    <table class="container" width="100%" align="center" bgcolor="#fff" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="header">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="left">
+                            <img class="logo" src="{{frontUrl}}">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table bgcolor="#ffffff" class="content" width="90%" align="center" border="0">
+                    <tr class="welcome-msg">
+                        <td class="content-msg">
+                            <table class="welcome-msg-content" width="90%" align="center" border="0" cellspacing="0"
+                                   cellpadding="0">
+                                <tr>
+                                    <td class="content-desc-course">
+                                        <div class="desc-course-name">
+                                            <h1 class="title">¡Bienvenido a Ada Intelligence!</h1>
+                                            <p class="hola">
+                                                ¡Hola {{username}}! para activar tu cuenta, debes dar click en el boton, o en el enlace!
+                                            </p>
+                                            <p class="tdbtn-content">
+                                                <a class="link_action" href="{{token}}">Activar cuenta</a>
+                                            </p>
+                                            <p>
+                                                <a href="{{token}}">{{token}}</a>
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

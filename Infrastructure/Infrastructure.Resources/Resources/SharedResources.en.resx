@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EmailConfirmedAccountSubject" xml:space="preserve">
+    <value>Confirmar cuenta de usuario</value>
+  </data>
+  <data name="EmailConfirmedAccountTemplate" xml:space="preserve">
+    <value>ADA-ConfirmAccount-En</value>
+  </data>
+  <data name="EmailRecoveryPasswordSubject" xml:space="preserve">
+    <value>Recuperación de contraseña</value>
+  </data>
+  <data name="EmailRecoveryPasswordTemplate" xml:space="preserve">
+    <value>ADA-RecoveryPassword-En</value>
+  </data>
+  <data name="ExceptionInvalidRequestEmailNotConfirmed" xml:space="preserve">
+    <value>El correo no ha sido confirmado</value>
+  </data>
+  <data name="ExceptionInvalidRequestGrantTypeNotFound" xml:space="preserve">
+    <value>GrantType no encontrado Password o RefreshToken</value>
+  </data>
+  <data name="ExceptionInvalidRequestHasntExpired" xml:space="preserve">
+    <value>El token de acceso no ha expirado aun</value>
+  </data>
+  <data name="ExceptionInvalidRequestInvalidToken" xml:space="preserve">
+    <value>Token invalido</value>
+  </data>
+  <data name="ExceptionInvalidRequestRefreshTokenExpired" xml:space="preserve">
+    <value>El token de refrescar ya expiro</value>
+  </data>
+  <data name="ExceptionInvalidRequestRefreshTokenHasUsed" xml:space="preserve">
+    <value>El token de refrescar ya ha sido usado</value>
+  </data>
+  <data name="ExceptionInvalidRequestRefreshTokenInvalidated" xml:space="preserve">
+    <value>El token de refrescar ha sido invalidado</value>
+  </data>
+  <data name="ExceptionInvalidRequestRefreshTokenNotExists" xml:space="preserve">
+    <value>El token de refrescar sesion no existe</value>
+  </data>
+  <data name="ExceptionInvalidRequestRefreshTokenNotMatch" xml:space="preserve">
+    <value>El token de refrescar no concuerda con el token de acceso</value>
+  </data>
+  <data name="ExceptionInvalidRequestRepeatUser" xml:space="preserve">
+    <value>El Usuario {0} ya se encuentra registrado</value>
+  </data>
+  <data name="ExceptionInvalidRequestUserHasConfirm" xml:space="preserve">
+    <value>La cuenta {0} ya se encuentra activada</value>
+  </data>
+  <data name="ExceptionUnauthorizedUser" xml:space="preserve">
+    <value>Usuario y/o contraseña incorrectos</value>
+  </data>
+  <data name="ExceptionUserNotFound" xml:space="preserve">
+    <value>Usuario no encontrado {0}</value>
+  </data>
+  <data name="UserHasLoginWithProvider" xml:space="preserve">
+    <value>Debes iniciar sesión con '{0}'</value>
+  </data>
+  <data name="ValidationAuthenticationLoginAccessToken" xml:space="preserve">
+    <value>El token de acceso es requerido</value>
+  </data>
+  <data name="ValidationAuthenticationLoginPassword" xml:space="preserve">
+    <value>La contraseña es requerida</value>
+  </data>
+  <data name="ValidationAuthenticationLoginRefreshToken" xml:space="preserve">
+    <value>El token de refrescar es requerido</value>
+  </data>
+  <data name="ValidationAuthenticationLoginUsername" xml:space="preserve">
+    <value>El usuario es requerido</value>
+  </data>
+  <data name="ValidationLogoutToken" xml:space="preserve">
+    <value>El token es necesario para cerrar sesion</value>
+  </data>
+  <data name="ValidationRecoveryPasswordConfirmEmail" xml:space="preserve">
+    <value>El correo es requerido</value>
+  </data>
+  <data name="ValidationRecoveryPasswordConfirmPassword" xml:space="preserve">
+    <value>La contraseña es requerida</value>
+  </data>
+  <data name="ValidationRecoveryPasswordConfirmToken" xml:space="preserve">
+    <value>El codigo es requerido</value>
+  </data>
+  <data name="ValidationRecoveryPasswordEmail" xml:space="preserve">
+    <value>El correo es requerido</value>
+  </data>
+  <data name="ValidationUserRegistrationEmail" xml:space="preserve">
+    <value>El correo es requerido</value>
+  </data>
+  <data name="ValidationUserRegistrationPassword" xml:space="preserve">
+    <value>La contraseña es requerida</value>
+  </data>
+  <data name="ValidationUserRegistrationUsername" xml:space="preserve">
+    <value>El usuario es requerido</value>
+  </data>
+</root>
