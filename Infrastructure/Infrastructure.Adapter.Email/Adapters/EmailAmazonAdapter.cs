@@ -9,7 +9,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Logging;
-using Domain.Settings;
+using Infrastructure.Adapter.Email.Settings;
 
 namespace Infrastructure.Adapter.Email.Adapters
 {

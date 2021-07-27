@@ -7,7 +7,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Logging;
 using Infrastructure.Adapter.Storage.Interfaces;
 using Infrastructure.Adapter.Storage.Models;
-using Domain.Settings;
+using Infrastructure.Adapter.Storage.Settings;
 
 namespace Infrastructure.Adapter.Storage.Adapters
 {
