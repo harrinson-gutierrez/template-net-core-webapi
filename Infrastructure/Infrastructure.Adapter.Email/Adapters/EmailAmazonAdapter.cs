@@ -9,7 +9,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Logging;
-using Domain.Settings;
+using Infrastructure.Adapter.Email.Settings;
 
 namespace Infrastructure.Adapter.Email.Adapters
 {
@@ -81,12 +81,16 @@ namespace Infrastructure.Adapter.Email.Adapters
         public async Task<EmailResponse> SendEmailWhitAttachments(EmailRequestAttachment emailRequest)
         {
             EmailResponse emailResponse = new EmailResponse();
-            var bodyBuilder = new BodyBuilder();
+            var bodyBuilder = new BodyBuilder
+            {
+                HtmlBody = emailRequest.HtmlBody,
+                TextBody = emailRequest.TextBody
+            };
 
-            bodyBuilder.HtmlBody = emailRequest.HtmlBody;
-            bodyBuilder.TextBody = emailRequest.TextBody;
-            bodyBuilder.Attachments.Add(emailRequest.Name, emailRequest.File);
-
+            foreach (var file in emailRequest.Attachments)
+            {
+                bodyBuilder.Attachments.Add(file.Name, file.File, ContentType.Parse(file.Type));
+            }
             var mimeMessage = new MimeMessage();
             mimeMessage.From.Add(MailboxAddress.Parse(EmailConfiguration.Value.SenderAddress));
 

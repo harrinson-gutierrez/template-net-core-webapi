@@ -1,4 +1,4 @@
-﻿namespace Domain.Settings
+﻿namespace Infrastructure.Adapter.Storage.Settings
 {
     public class StorageOptions
     {

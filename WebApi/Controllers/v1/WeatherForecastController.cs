@@ -40,12 +40,13 @@ namespace WebApi.Controllers.V1
         }
 
         [HttpPost]
+        [Route("Email")]
         public IActionResult SendEmail()
         {
             EmailService.SendEmail(new Infrastructure.Adapter.Email.Models.EmailRequest()
             {
                 HtmlBody = "HOLA MUNDO",
-                Receivers = new List<string>() { "bofugroup@gmail.com"},
+                Receivers = new List<string>() { "contacto@bofugroupcolombia.com" },
                 Subject ="prueba",
                 TextBody =" hola mundo"
             });

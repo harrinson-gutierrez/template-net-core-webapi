@@ -1,4 +1,4 @@
-﻿namespace Domain.Settings
+﻿namespace Infrastructure.Adapter.Email.Settings
 {
     public class EmailOptions
     {
