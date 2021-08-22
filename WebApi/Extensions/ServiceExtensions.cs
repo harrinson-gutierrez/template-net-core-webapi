@@ -15,7 +15,7 @@ namespace WebApi.Extensions
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Web Api Template",
+                    Title = "Web Api Template s",
                     Description = "Template para construccion de API en netcore",
                     Contact = new OpenApiContact
                     {
