@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.Adapter.Email\Infrastructure.Adapter.Email.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.Adapter.SQS\Infrastructure.Adapter.SQS.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.Adapter.Storage\Infrastructure.Adapter.Storage.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.Identity\Infrastructure.Identity.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.Persistence.Migrations\Infrastructure.Persistence.Migrations.csproj" />

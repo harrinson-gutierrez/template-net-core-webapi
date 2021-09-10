@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Infrastructure.Adapter.Email.Interfaces;
+using Infrastructure.Adapter.SQS.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -12,6 +14,7 @@ namespace WebApi.Controllers.V1
     public class WeatherForecastController : BaseApiController
     {
         private readonly IEmailService EmailService;
+        private readonly ISqsService SqsService;
 
         private static readonly string[] Summaries = new[]
         {
@@ -20,10 +23,26 @@ namespace WebApi.Controllers.V1
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IEmailService emailService)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, 
+                                         IEmailService emailService,
+                                         ISqsService sqsService)
         {
             _logger = logger;
             EmailService = emailService;
+            SqsService = sqsService;
+        }
+
+        [HttpGet]
+        [Route("SQS")]
+        public async Task<IActionResult> SendSQS()
+        {
+            await SqsService.PostMessageAsync("prueba3", new WeatherForecast()
+            {
+                Date = DateTime.Now,
+                Summary = "KAKA",
+                TemperatureC = 42
+            });
+            return new OkResult();
         }
 
         [HttpGet]

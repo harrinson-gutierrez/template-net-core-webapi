@@ -1,5 +1,6 @@
 using Application;
 using Infrastructure.Adapter.Email;
+using Infrastructure.Adapter.SQS;
 using Infrastructure.Adapter.Storage;
 using Infrastructure.Identity;
 using Infrastructure.Persistence;
@@ -39,6 +40,7 @@ namespace WebApi
             services.AddSwaggerExtension();
             services.AddApiVersioningExtension();
             services.AddHealthChecks();
+            services.AddSQSAdapter(Configuration);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
